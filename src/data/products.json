@@ -1,0 +1,361 @@
+[
+  {
+    "id": 1,
+    "title": "Minimal Sneakers",
+    "description": "Lightweight everyday sneakers with a clean silhouette.",
+    "price": 79.99,
+    "originalPrice": 99.99,
+    "rating": 4.5,
+    "color": "black",
+    "image": "https://via.placeholder.com/400x400"
+  },
+  {
+    "id": 2,
+    "title": "Street Hoodie",
+    "description": "Oversized fleece hoodie in seasonal colors.",
+    "price": 59.99,
+    "originalPrice": 69.99,
+    "rating": 4.2,
+    "color": "black",
+    "image": "https://via.placeholder.com/400x400"
+  },
+  {
+    "id": 3,
+    "title": "Classic Watch",
+    "description": "Minimal watch with stainless steel mesh strap.",
+    "price": 129.99,
+    "originalPrice": 159.99,
+    "rating": 4.8,
+    "color": "white",
+    "image": "https://via.placeholder.com/400x400"
+  },
+  {
+    "id": 4,
+    "title": "Classic Watch",
+    "description": "Minimal watch with stainless steel mesh strap.",
+    "price": 129.99,
+    "originalPrice": 159.99,
+    "rating": 4.8,
+    "color": "white",
+    "image": "https://via.placeholder.com/400x400"
+  },
+  {
+    "id": 5,
+    "title": "Classic Watch",
+    "description": "Minimal watch with stainless steel mesh strap.",
+    "price": 129.99,
+    "rating": 4.8,
+    "color": "neutral",
+    "image": "https://via.placeholder.com/400x400"
+  },
+  {
+    "id": 6,
+    "title": "Classic Watch",
+    "description": "Minimal watch with stainless steel mesh strap.",
+    "price": 129.99,
+    "originalPrice": 159.99,
+    "rating": 4.8,
+    "color": "neutral",
+    "image": "https://via.placeholder.com/400x400"
+  },  
+  {
+    "id": 7,
+    "title": "Urban Backpack",
+    "description": "Durable everyday backpack with laptop compartment.",
+    "price": 89.99,
+    "originalPrice": 119.99,
+    "rating": 4.6,
+    "color": "black",
+    "image": "https://via.placeholder.com/400x400"
+  },
+  {
+    "id": 8,
+    "title": "Running Sneakers",
+    "description": "Lightweight sneakers designed for maximum comfort.",
+    "price": 99.99,
+    "originalPrice": 129.99,
+    "rating": 4.7,
+    "color": "white",
+    "image": "https://via.placeholder.com/400x400"
+  },
+  {
+    "id": 9,
+    "title": "Leather Wallet",
+    "description": "Slim genuine leather wallet with RFID protection.",
+    "price": 49.99,
+    "originalPrice": 69.99,
+    "rating": 4.5,
+    "color": "brown",
+    "image": "https://via.placeholder.com/400x400"
+  },
+  {
+    "id": 10,
+    "title": "Sport Smartwatch",
+    "description": "Water-resistant smartwatch with fitness tracking.",
+    "price": 199.99,
+    "originalPrice": 249.99,
+    "rating": 4.4,
+    "color": "black",
+    "image": "https://via.placeholder.com/400x400"
+  },
+  {
+    "id": 11,
+    "title": "Casual T-Shirt",
+    "description": "Soft cotton t-shirt with modern fit.",
+    "price": 24.99,
+    "originalPrice": 34.99,
+    "rating": 4.3,
+    "color": "blue",
+    "image": "https://via.placeholder.com/400x400"
+  },
+  {
+    "id": 12,
+    "title": "Slim Fit Jeans",
+    "description": "Stretch denim jeans with slim silhouette.",
+    "price": 69.99,
+    "originalPrice": 89.99,
+    "rating": 4.6,
+    "color": "indigo",
+    "image": "https://via.placeholder.com/400x400"
+  },
+  {
+    "id": 13,
+    "title": "Wireless Headphones",
+    "description": "Noise-cancelling over-ear wireless headphones.",
+    "price": 149.99,
+    "originalPrice": 199.99,
+    "rating": 4.8,
+    "color": "gray",
+    "image": "https://via.placeholder.com/400x400"
+  },
+  {
+    "id": 14,
+    "title": "Portable Speaker",
+    "description": "Compact Bluetooth speaker with deep bass.",
+    "price": 79.99,
+    "originalPrice": 99.99,
+    "rating": 4.5,
+    "color": "red",
+    "image": "https://via.placeholder.com/400x400"
+  },
+  {
+    "id": 15,
+    "title": "Travel Sunglasses",
+    "description": "UV-protected polarized sunglasses.",
+    "price": 39.99,
+    "originalPrice": 59.99,
+    "rating": 4.4,
+    "color": "black",
+    "image": "https://via.placeholder.com/400x400"
+  },
+  {
+    "id": 16,
+    "title": "Fitness Shorts",
+    "description": "Breathable athletic shorts for training.",
+    "price": 29.99,
+    "originalPrice": 44.99,
+    "rating": 4.3,
+    "color": "gray",
+    "image": "https://via.placeholder.com/400x400"
+  },
+  {
+    "id": 17,
+    "title": "Winter Jacket",
+    "description": "Insulated jacket built for cold weather.",
+    "price": 159.99,
+    "originalPrice": 199.99,
+    "rating": 4.7,
+    "color": "navy",
+    "image": "https://via.placeholder.com/400x400"
+  },
+  {
+    "id": 18,
+    "title": "Canvas Sneakers",
+    "description": "Classic low-top canvas sneakers.",
+    "price": 59.99,
+    "originalPrice": 79.99,
+    "rating": 4.4,
+    "color": "white",
+    "image": "https://via.placeholder.com/400x400"
+  },
+  {
+    "id": 19,
+    "title": "Office Backpack",
+    "description": "Professional backpack with USB charging port.",
+    "price": 94.99,
+    "originalPrice": 124.99,
+    "rating": 4.6,
+    "color": "charcoal",
+    "image": "https://via.placeholder.com/400x400"
+  },
+  {
+    "id": 20,
+    "title": "Leather Belt",
+    "description": "Premium leather belt with metal buckle.",
+    "price": 34.99,
+    "originalPrice": 49.99,
+    "rating": 4.5,
+    "color": "brown",
+    "image": "https://via.placeholder.com/400x400"
+  },
+  {
+    "id": 21,
+    "title": "Graphic Hoodie",
+    "description": "Warm hoodie with printed front design.",
+    "price": 64.99,
+    "originalPrice": 84.99,
+    "rating": 4.6,
+    "color": "black",
+    "image": "https://via.placeholder.com/400x400"
+  },
+  {
+    "id": 22,
+    "title": "Yoga Mat",
+    "description": "Non-slip eco-friendly yoga mat.",
+    "price": 39.99,
+    "originalPrice": 54.99,
+    "rating": 4.7,
+    "color": "purple",
+    "image": "https://via.placeholder.com/400x400"
+  },
+  {
+    "id": 23,
+    "title": "Sports Cap",
+    "description": "Adjustable breathable sports cap.",
+    "price": 19.99,
+    "originalPrice": 29.99,
+    "rating": 4.2,
+    "color": "black",
+    "image": "https://via.placeholder.com/400x400"
+  },
+  {
+    "id": 24,
+    "title": "Minimal Desk Lamp",
+    "description": "LED desk lamp with touch controls.",
+    "price": 59.99,
+    "originalPrice": 79.99,
+    "rating": 4.5,
+    "color": "white",
+    "image": "https://via.placeholder.com/400x400"
+  },
+  {
+    "id": 25,
+    "title": "Laptop Sleeve",
+    "description": "Water-resistant padded laptop sleeve.",
+    "price": 29.99,
+    "originalPrice": 39.99,
+    "rating": 4.4,
+    "color": "gray",
+    "image": "https://via.placeholder.com/400x400"
+  },
+  {
+    "id": 26,
+    "title": "Travel Mug",
+    "description": "Insulated stainless steel travel mug.",
+    "price": 24.99,
+    "originalPrice": 34.99,
+    "rating": 4.6,
+    "color": "silver",
+    "image": "https://via.placeholder.com/400x400"
+  },
+  {
+    "id": 27,
+    "title": "Bluetooth Earbuds",
+    "description": "Compact wireless earbuds with charging case.",
+    "price": 89.99,
+    "originalPrice": 119.99,
+    "rating": 4.7,
+    "color": "white",
+    "image": "https://via.placeholder.com/400x400"
+  },
+  {
+    "id": 28,
+    "title": "Training Gloves",
+    "description": "Breathable gym gloves with wrist support.",
+    "price": 19.99,
+    "originalPrice": 29.99,
+    "rating": 4.3,
+    "color": "black",
+    "image": "https://via.placeholder.com/400x400"
+  },
+  {
+    "id": 29,
+    "title": "Smartphone Stand",
+    "description": "Adjustable aluminum phone stand.",
+    "price": 14.99,
+    "originalPrice": 24.99,
+    "rating": 4.4,
+    "color": "silver",
+    "image": "https://via.placeholder.com/400x400"
+  },
+  {
+    "id": 30,
+    "title": "Casual Sneakers",
+    "description": "Everyday sneakers with cushioned sole.",
+    "price": 84.99,
+    "originalPrice": 109.99,
+    "rating": 4.5,
+    "color": "gray",
+    "image": "https://via.placeholder.com/400x400"
+  },
+  {
+    "id": 31,
+    "title": "Digital Alarm Clock",
+    "description": "LED display alarm clock with USB charging.",
+    "price": 34.99,
+    "originalPrice": 49.99,
+    "rating": 4.2,
+    "color": "black",
+    "image": "https://via.placeholder.com/400x400"
+  },
+  {
+    "id": 32,
+    "title": "Outdoor Jacket",
+    "description": "Waterproof windbreaker for outdoor activities.",
+    "price": 119.99,
+    "originalPrice": 149.99,
+    "rating": 4.6,
+    "color": "green",
+    "image": "https://via.placeholder.com/400x400"
+  },
+  {
+    "id": 33,
+    "title": "Classic Polo Shirt",
+    "description": "Breathable cotton polo with tailored fit.",
+    "price": 44.99,
+    "originalPrice": 59.99,
+    "rating": 4.4,
+    "color": "navy",
+    "image": "https://via.placeholder.com/400x400"
+  },
+  {
+    "id": 34,
+    "title": "Minimal Wall Clock",
+    "description": "Silent modern wall clock design.",
+    "price": 54.99,
+    "originalPrice": 74.99,
+    "rating": 4.5,
+    "color": "white",
+    "image": "https://via.placeholder.com/400x400"
+  },
+  {
+    "id": 35,
+    "title": "Travel Duffel Bag",
+    "description": "Spacious duffel bag for weekend trips.",
+    "price": 109.99,
+    "originalPrice": 139.99,
+    "rating": 4.7,
+    "color": "black",
+    "image": "https://via.placeholder.com/400x400"
+  },
+  {
+    "id": 36,
+    "title": "Premium Notebook",
+    "description": "Hardcover lined notebook for professionals.",
+    "price": 19.99,
+    "originalPrice": 29.99,
+    "rating": 4.3,
+    "color": "brown",
+    "image": "https://via.placeholder.com/400x400"
+  }
+]
