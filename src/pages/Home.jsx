@@ -2,6 +2,22 @@ import { useState, useMemo } from "react";
 import ProductCard from "../components/ProductCard";
 import products from "../data/products.json";
 
+const COLOR_MAP = {
+  black: "#111827",
+  white: "#f9fafb",
+  gray: "#6b7280",
+  silver: "#9ca3af",
+  charcoal: "#374151",
+  navy: "#1e3a5f",
+  blue: "#2563eb",
+  indigo: "#4f46e5",
+  purple: "#7c3aed",
+  red: "#dc2626",
+  brown: "#92400e",
+  neutral: "#a8a29e",
+  green: "#16a34a",
+};
+
 const PRICE_FILTERS = [
   { id: "discounted", label: "Discounted items" },
   { id: "under50", label: "Under €50" },
@@ -134,17 +150,21 @@ export default function Home() {
 
               <div className="plp-filter-group">
                 <span className="plp-filter-label">Color</span>
-                <div className="plp-checkbox-list">
-                  {colors.map((color) => (
-                    <label key={color} className="plp-checkbox-item">
-                      <input
-                        type="checkbox"
-                        checked={selectedColors.includes(color)}
-                        onChange={() => toggleColor(color)}
+                <div className="plp-color-swatches">
+                  {colors.map((color) => {
+                    const isSelected = selectedColors.includes(color);
+                    return (
+                      <button
+                        key={color}
+                        type="button"
+                        className={`plp-color-swatch ${isSelected ? "plp-color-swatch--selected" : ""}`}
+                        onClick={() => toggleColor(color)}
+                        style={{ "--swatch-color": COLOR_MAP[color] ?? "#6b7280" }}
+                        title={color.charAt(0).toUpperCase() + color.slice(1)}
+                        aria-pressed={isSelected}
                       />
-                      {color.charAt(0).toUpperCase() + color.slice(1)}
-                    </label>
-                  ))}
+                    );
+                  })}
                 </div>
               </div>
 
