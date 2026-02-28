@@ -39,6 +39,10 @@ main {
 }
 
 /* Sticky header / navbar */
+:root {
+  --navbar-height: 4.5rem;
+}
+
 .navbar {
   position: sticky;
   top: 0;
@@ -140,6 +144,12 @@ main {
 
 /* Filter sidebar */
 .plp-filters {
+  position: sticky;
+  top: calc(var(--navbar-height) + 1rem);
+  align-self: start;
+  max-height: calc(100vh - var(--navbar-height) - 2rem);
+  overflow-y: auto;
+  overscroll-behavior: contain;
   background-color: #ffffff;
   border-radius: 1rem;
   padding: 1.25rem 1.25rem 1.5rem;
