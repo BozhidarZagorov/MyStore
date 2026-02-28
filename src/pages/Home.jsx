@@ -124,11 +124,52 @@ export default function Home() {
     });
   };
 
+  const removeColor = (color) => {
+    setSelectedColors((prev) => prev.filter((c) => c !== color));
+    setVisibleCount(20);
+  };
+
+  const removePriceFilter = (id) => {
+    setSelectedPriceFilters((prev) => prev.filter((f) => f !== id));
+    setVisibleCount(20);
+  };
+
+  const getPriceFilterLabel = (id) =>
+    PRICE_FILTERS.find((f) => f.id === id)?.label ?? id;
+
+  const activeFilterTags = [
+    ...selectedColors.map((color) => ({
+      key: `color-${color}`,
+      label: color.charAt(0).toUpperCase() + color.slice(1),
+      onRemove: () => removeColor(color),
+    })),
+    ...selectedPriceFilters.map((id) => ({
+      key: `price-${id}`,
+      label: getPriceFilterLabel(id),
+      onRemove: () => removePriceFilter(id),
+    })),
+  ];
+
   return (
     <>
       <section className="plp-page">
         <div className="plp-inner">
           <div className="plp-meta-bar">
+            <div className="plp-active-filters">
+              {activeFilterTags.map(({ key, label, onRemove }) => (
+                <span key={key} className="plp-filter-tag">
+                  {label}
+                  <button
+                    type="button"
+                    className="plp-filter-tag-remove"
+                    onClick={onRemove}
+                    aria-label={`Remove ${label} filter`}
+                  >
+                    <span className="plp-filter-tag-remove-icon" aria-hidden>×</span>
+                  </button>
+                </span>
+              ))}
+            </div>
             <span className="plp-product-count">
               {visibleProducts.length} out of {sortedProducts.length} products displayed
             </span>
