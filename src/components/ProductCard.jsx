@@ -1,4 +1,13 @@
+import { useCart } from "../context/CartContext";
+
 export default function ProductCard({ product }) {
+  const { addToCart } = useCart();
+
+  const handleAddToCart = () => {
+    addToCart(product);
+    alert("Product added to cart");
+  };
+
   const hasDiscount = product.originalPrice && product.originalPrice > product.price;
   const discountPercent = hasDiscount
     ? Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100)
@@ -39,7 +48,7 @@ export default function ProductCard({ product }) {
           </div>
           <button
             className="product-add-to-cart"
-            onClick={() => alert("Product added to cart")}
+            onClick={handleAddToCart}
           >
             Add to Cart
           </button>
