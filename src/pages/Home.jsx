@@ -2,6 +2,32 @@ import { useState, useMemo } from "react";
 import ProductCard from "../components/ProductCard";
 import products from "../data/products.json";
 
+function getProductCategory(product) {
+  const img = (product.image || "").toLowerCase();
+  if (img.includes("watch")) return "watches";
+  if (img.includes("bag")) return "bags";
+  if (img.includes("shoes")) return "shoes";
+  return null;
+}
+
+const CATEGORY_INFO = {
+  watches: {
+    title: "Watches",
+    description:
+      "Discover our collection of timeless watches, from minimal classics to smart timepieces.",
+  },
+  bags: {
+    title: "Bags",
+    description:
+      "Functional and stylish bags for every occasion—travel, everyday, or professional use.",
+  },
+  shoes: {
+    title: "Shoes",
+    description:
+      "Comfortable and versatile footwear for daily wear and active lifestyles.",
+  },
+};
+
 const COLOR_MAP = {
   black: "#111827",
   white: "#f9fafb",
@@ -64,19 +90,24 @@ function sortProducts(list, sortBy) {
   }
 }
 
-export default function Home() {
+export default function Home({ category = "watches" }) {
   const [visibleCount, setVisibleCount] = useState(20);
   const [selectedColors, setSelectedColors] = useState([]);
   const [selectedPriceFilters, setSelectedPriceFilters] = useState([]);
   const [sortBy, setSortBy] = useState("featured");
 
+  const categoryProducts = useMemo(
+    () => products.filter((p) => getProductCategory(p) === category),
+    [category]
+  );
+
   const colors = useMemo(
-    () => [...new Set(products.map((p) => p.color))].sort(),
-    []
+    () => [...new Set(categoryProducts.map((p) => p.color))].sort(),
+    [categoryProducts]
   );
 
   const filteredProducts = useMemo(() => {
-    return products.filter((product) => {
+    return categoryProducts.filter((product) => {
       const colorMatch =
         selectedColors.length === 0 ||
         selectedColors.includes(product.color);
@@ -85,7 +116,7 @@ export default function Home() {
         selectedPriceFilters.some((id) => matchesPriceFilter(product, id));
       return colorMatch && priceMatch;
     });
-  }, [selectedColors, selectedPriceFilters]);
+  }, [categoryProducts, selectedColors, selectedPriceFilters]);
 
   const sortedProducts = useMemo(
     () => sortProducts(filteredProducts, sortBy),
@@ -150,9 +181,15 @@ export default function Home() {
     })),
   ];
 
+  const info = CATEGORY_INFO[category] ?? CATEGORY_INFO.watches;
+
   return (
     <>
       <section className="plp-page">
+        <header className="plp-category-header">
+          <h1 className="plp-category-title">{info.title}</h1>
+          <p className="plp-category-description">{info.description}</p>
+        </header>
         <div className="plp-inner">
           <div className="plp-meta-bar">
             <div className="plp-active-filters">
