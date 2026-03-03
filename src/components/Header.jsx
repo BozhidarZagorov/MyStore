@@ -105,19 +105,23 @@ export default function Header({ mobileFilters }) {
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}
           >
+            <div className="mobile-drawer-header">
+              <span>Categories</span>
+            </div>
 
-        <div className="mobile-drawer-content">
-          <h4>Categories</h4>
-          {CATEGORIES.map(({ cat, label }) => (
-            <NavLink
-              key={cat}
-              to={`/${cat}`}
-              onClick={() => setIsOpen(false)}
-              className="mobile-link"
-            >
-              {label}
-            </NavLink>
-          ))}
+            <div className="mobile-drawer-content"> 
+              {CATEGORIES.map(({ cat, label }) => (
+                <NavLink
+                  key={cat}
+                  to={`/${cat}`}
+                  onClick={() => setIsOpen(false)}
+                  className={({ isActive }) =>
+                    `mobile-link ${isActive ? "mobile-link--active" : ""}`
+                  }
+                >
+                  {label}
+                </NavLink>
+              ))}
 
               {mobileFilters && (
                 <>
