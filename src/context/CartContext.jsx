@@ -25,6 +25,14 @@ export function CartProvider({ children }) {
     setItems((prev) => prev.filter((item) => item.id !== productId));
   };
 
+  const removeOneFromCart = (productId) => {
+    setItems((prev) => prev.map((item) => item.id === productId ? { ...item, quantity: item.quantity - 1 } : item).filter((item) => item.quantity > 0));
+  };
+
+  const AddOneToCart = (productId) => {
+    setItems((prev) => prev.map((item) => item.id === productId ? { ...item, quantity: item.quantity + 1 } : item));
+  };
+
   const clearCart = () => setItems([]);
 
   const value = useMemo(() => {
@@ -42,6 +50,8 @@ export function CartProvider({ children }) {
       items,
       addToCart,
       removeFromCart,
+      removeOneFromCart,
+      AddOneToCart,
       clearCart,
       totalItems,
       subtotal,
