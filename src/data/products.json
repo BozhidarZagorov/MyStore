@@ -313,7 +313,7 @@
   },
   {
     "id": 33,
-    "title": "Classic Polo Shirt",
+    "title": "Minimal Sneakers",
     "description": "Breathable cotton polo with tailored fit.",
     "price": 44.99,
     "originalPrice": 59.99,
@@ -349,5 +349,649 @@
     "rating": 4.3,
     "color": "brown",
     "image": "shoes.png"
+  },
+  {
+    "id": 37,
+    "title": "Urban Runner Sneakers",
+    "description": "Street-ready runners with breathable mesh and cushioned sole.",
+    "price": 94.99,
+    "originalPrice": 119.99,
+    "rating": 4.5,
+    "color": "navy",
+    "image": "shoes.png"
+  },
+  {
+    "id": 38,
+    "title": "Retro Court Classics",
+    "description": "Vintage-inspired low-tops with perforated leather upper.",
+    "price": 129.99,
+    "originalPrice": 159.99,
+    "rating": 4.8,
+    "color": "white",
+    "image": "shoes.png"
+  },
+  {
+    "id": 39,
+    "title": "Flex Trail Runners",
+    "description": "All-terrain sneakers with grippy outsole and moisture-wicking lining.",
+    "price": 79.99,
+    "originalPrice": 99.99,
+    "rating": 4.3,
+    "color": "green",
+    "image": "shoes.png"
+  },
+  {
+    "id": 40,
+    "title": "Knit Glide Slip-Ons",
+    "description": "Sock-fit sneakers with stretch-knit upper and memory-foam insole.",
+    "price": 69.99,
+    "originalPrice": 89.99,
+    "rating": 4.6,
+    "color": "gray",
+    "image": "shoes.png"
+  },
+  {
+    "id": 41,
+    "title": "High-Top Horizon",
+    "description": "Ankle-supporting high-tops crafted from premium canvas.",
+    "price": 99.99,
+    "originalPrice": 124.99,
+    "rating": 4.4,
+    "color": "blue",
+    "image": "shoes.png"
+  },
+  {
+    "id": 42,
+    "title": "EcoStep Casuals",
+    "description": "Sustainable sneakers made from recycled knit and plant-based foam.",
+    "price": 89.99,
+    "rating": 4.7,
+    "color": "green",
+    "image": "shoes.png"
+  },
+  {
+    "id": 43,
+    "title": "Velocity Racers",
+    "description": "Feather-light racing flats with carbon-fiber inspired shank.",
+    "price": 139.99,
+    "rating": 4.9,
+    "color": "green",
+    "image": "shoes.png"
+  },
+  {
+    "id": 44,
+    "title": "Chill Lounge Sneakers",
+    "description": "Soft suede low-tops perfect for relaxed weekends.",
+    "price": 74.99,
+    "originalPrice": 94.99,
+    "rating": 4.2,
+    "color": "black",
+    "image": "shoes.png"
+  },
+  {
+    "id": 45,
+    "title": "Storm Shield Boots",
+    "description": "Water-resistant mid-top sneakers with fleece lining.",
+    "price": 119.99,
+    "originalPrice": 149.99,
+    "rating": 4.6,
+    "color": "charcoal",
+    "image": "shoes.png"
+  },
+  {
+    "id": 46,
+    "title": "Plaza Loafers",
+    "description": "Minimalist slip-on loafers blending sneaker comfort with smart style.",
+    "price": 109.99,
+    "rating": 4.5,
+    "color": "navy",
+    "image": "shoes.png"
+  },
+  {
+    "id": 47,
+    "title": "Pulse Gym Sneakers",
+    "description": "Cross-training shoes with multi-directional grip and stabilizing straps.",
+    "price": 84.99,
+    "originalPrice": 104.99,
+    "rating": 4.4,
+    "color": "blue",
+    "image": "shoes.png"
+  },
+  {
+    "id": 48,
+    "title": "Heritage Jogger",
+    "description": "Old-school joggers reimagined with modern cushioning tech.",
+    "price": 94.99,
+    "originalPrice": 114.99,
+    "rating": 4.3,
+    "color": "white",
+    "image": "shoes.png"
+  },
+  {
+    "id": 49,
+    "title": "AeroLite Walkers",
+    "description": "Feather-weight walking sneakers with energy-return midsole.",
+    "price": 99.99,
+    "rating": 4.7,
+    "color": "blue",
+    "image": "shoes.png"
+  },
+  {
+    "id": 50,
+    "title": "StreetFlex High",
+    "description": "Bold high-tops with reflective accents and cushioned collar.",
+    "price": 114.99,
+    "originalPrice": 144.99,
+    "rating": 4.6,
+    "color": "red",
+    "image": "shoes.png"
+  },
+  {
+    "id": 51,
+    "title": "Coast Canvas Deck",
+    "description": "Breathable deck shoes with siped soles for summer adventures.",
+    "price": 69.99,
+    "rating": 4.2,
+    "color": "charcoal",
+    "image": "shoes.png"
+  },
+  {
+    "id": 52,
+    "title": "Ignite Sprint Spikes",
+    "description": "Track-inspired spikes engineered for explosive speed.",
+    "price": 129.99,
+    "rating": 4.8,
+    "color": "orange",
+    "image": "shoes.png"
+  },
+  {
+    "id": 53,
+    "title": "CloudStep Mules",
+    "description": "Backless sneakers combining slide-in ease with arch support.",
+    "price": 99.99,
+    "rating": 4.5,
+    "color": "lilac",
+    "image": "shoes.png"
+  },
+  {
+    "id": 54,
+    "title": "Trek Outdoors",
+    "description": "Rugged trail sneakers with rock-guard toe and aggressive lugs.",
+    "price": 104.99,
+    "originalPrice": 129.99,
+    "rating": 4.7,
+    "color": "navy",
+    "image": "shoes.png"
+  },
+  {
+    "id": 55,
+    "title": "Metro Slipstream",
+    "description": "Sleek knit sneakers with hidden eyelets and speedy silhouette.",
+    "price": 89.99,
+    "rating": 4.6,
+    "color": "black",
+    "image": "shoes.png"
+  },
+  {
+    "id": 56,
+    "title": "Bounce Play Kids",
+    "description": "Fun, colorful sneakers sized for young explorers with bounce heel.",
+    "price": 59.99,
+    "originalPrice": 74.99,
+    "rating": 4.9,
+    "color": "red",
+    "image": "shoes.png"
+  },
+  {
+    "id": 57,
+    "title": "Slimline Dress Watch",
+    "description": "Ultra-thin case paired with supple Italian leather strap.",
+    "price": 119.99,
+    "originalPrice": 149.99,
+    "rating": 4.6,
+    "color": "blue",
+    "image": "watch.png"
+  },
+  {
+    "id": 58,
+    "title": "Urban Explorer Chrono",
+    "description": "Chronograph movement housed in brushed stainless steel.",
+    "price": 139.99,
+    "rating": 4.8,
+    "color": "neutral",
+    "image": "watch.png"
+  },
+  {
+    "id": 59,
+    "title": "Ocean Diver 200",
+    "description": "Rotating bezel and 200 m water resistance for serious dives.",
+    "price": 179.99,
+    "originalPrice": 219.99,
+    "rating": 4.7,
+    "color": "green",
+    "image": "watch.png"
+  },
+  {
+    "id": 60,
+    "title": "Solar Pulse",
+    "description": "Eco-friendly solar charging with sapphire crystal lens.",
+    "price": 99.99,
+    "rating": 4.5,
+    "color": "charcoal",
+    "image": "watch.png"
+  },
+  {
+    "id": 61,
+    "title": "Aviator GMT",
+    "description": "Dual-timezone dial inspired by classic cockpit instruments.",
+    "price": 189.99,
+    "originalPrice": 229.99,
+    "rating": 4.9,
+    "color": "black",
+    "image": "watch.png"
+  },
+  {
+    "id": 62,
+    "title": "Heritage Pocket Watch",
+    "description": "Hinged cover and Roman numerals for vintage charm.",
+    "price": 149.99,
+    "rating": 4.4,
+    "color": "gold",
+    "image": "watch.png"
+  },
+  {
+    "id": 63,
+    "title": "Ceramic Bloom",
+    "description": "High-gloss ceramic bracelet with minimalist mother-of-pearl dial.",
+    "price": 159.99,
+    "originalPrice": 199.99,
+    "rating": 4.7,
+    "color": "white",
+    "image": "watch.png"
+  },
+  {
+    "id": 64,
+    "title": "Rugged Field Watch",
+    "description": "Tactical nylon strap and luminescent markers for low-light visibility.",
+    "price": 89.99,
+    "rating": 4.3,
+    "color": "green",
+    "image": "watch.png"
+  },
+  {
+    "id": 65,
+    "title": "Rose Gold Elegance",
+    "description": "Slim profile with genuine rose gold plating and Milanese loop.",
+    "price": 129.99,
+    "originalPrice": 159.99,
+    "rating": 4.6,
+    "color": "rose-gold",
+    "image": "watch.png"
+  },
+  {
+    "id": 66,
+    "title": "Sport Smartwatch",
+    "description": "Touchscreen display with heart-rate and GPS built-in.",
+    "price": 199.99,
+    "rating": 4.5,
+    "color": "blue",
+    "image": "watch.png"
+  },
+  {
+    "id": 67,
+    "title": "Vintage Racing",
+    "description": "Tachymeter bezel and perforated leather rally strap.",
+    "price": 169.99,
+    "originalPrice": 209.99,
+    "rating": 4.8,
+    "color": "brown",
+    "image": "watch.png"
+  },
+  {
+    "id": 68,
+    "title": "Moonphase Classic",
+    "description": "Analog display featuring moon-phase complication and Roman indices.",
+    "price": 219.99,
+    "rating": 4.7,
+    "color": "silver",
+    "image": "watch.png"
+  },
+  {
+    "id": 69,
+    "title": "Titanium Ultra",
+    "description": "Feather-light titanium case with sapphire coating and rubber strap.",
+    "price": 249.99,
+    "originalPrice": 299.99,
+    "rating": 4.9,
+    "color": "silver",
+    "image": "watch.png"
+  },
+  {
+    "id": 70,
+    "title": "Urban Backpack",
+    "description": "Slim laptop backpack with hidden zipper and USB port.",
+    "price": 79.99,
+    "rating": 4.6,
+    "color": "charcoal",
+    "image": "bag.png"
+  },
+  {
+    "id": 71,
+    "title": "Canvas Duffle",
+    "description": "Heavy-duty cotton canvas with shoe compartment and shoulder strap.",
+    "price": 89.99,
+    "originalPrice": 109.99,
+    "rating": 4.5,
+    "color": "lilac",
+    "image": "bag.png"
+  },
+  {
+    "id": 72,
+    "title": "Foldable Tote",
+    "description": "Lightweight nylon tote that folds into its own pocket.",
+    "price": 29.99,
+    "rating": 4.3,
+    "color": "light-blue",
+    "image": "bag.png"
+  },
+  {
+    "id": 73,
+    "title": "Leather Briefcase",
+    "description": "Full-grain leather with brass hardware and padded laptop sleeve.",
+    "price": 189.99,
+    "originalPrice": 229.99,
+    "rating": 4.9,
+    "color": "light-blue",
+    "image": "bag.png"
+  },
+  {
+    "id": 74,
+    "title": "Gym Sling",
+    "description": "Cross-body sling with ventilated shoe tunnel and water bottle pocket.",
+    "price": 49.99,
+    "rating": 4.4,
+    "color": "black",
+    "image": "bag.png"
+  },
+  {
+    "id": 75,
+    "title": "Weekender Roll-Top",
+    "description": "Water-resistant roll-top with magnetic closures and laptop compartment.",
+    "price": 109.99,
+    "rating": 4.7,
+    "color": "navy",
+    "image": "bag.png"
+  },
+  {
+    "id": 76,
+    "title": "Hiking Daypack",
+    "description": "20 L pack with hydration port, trekking-pole loops and rain cover.",
+    "price": 99.99,
+    "originalPrice": 119.99,
+    "rating": 4.6,
+    "color": "green",
+    "image": "bag.png"
+  },
+  {
+    "id": 77,
+    "title": "Mini Belt Bag",
+    "description": "Trendy waist pack that converts to cross-body with adjustable strap.",
+    "price": 34.99,
+    "rating": 4.2,
+    "color": "rose-gold",
+    "image": "bag.png"
+  },
+  {
+    "id": 78,
+    "title": "Designer Shopper",
+    "description": "Structured faux-leather tote with metallic accents and snap closure.",
+    "price": 69.99,
+    "originalPrice": 89.99,
+    "rating": 4.5,
+    "color": "gray",
+    "image": "bag.png"
+  },
+  {
+    "id": 79,
+    "title": "Camera Cube",
+    "description": "Padded insert that turns any bag into a camera-safe carrier.",
+    "price": 39.99,
+    "rating": 4.4,
+    "color": "gray",
+    "image": "bag.png"
+  },
+  {
+    "id": 80,
+    "title": "Eco Recycled Backpack",
+    "description": "Made from 25 recycled bottles, with anti-theft back pocket.",
+    "price": 64.99,
+    "rating": 4.7,
+    "color": "green",
+    "image": "bag.png"
+  },
+  {
+    "id": 81,
+    "title": "Garment Duffel",
+    "description": "Hybrid bag that keeps suits wrinkle-free while storing shoes below.",
+    "price": 119.99,
+    "originalPrice": 149.99,
+    "rating": 4.8,
+    "color": "black",
+    "image": "bag.png"
+  },
+  {
+    "id": 82,
+    "title": "Clear Stadium Tote",
+    "description": "Compliant with venue security, reinforced seams and long handles.",
+    "price": 24.99,
+    "rating": 4.1,
+    "color": "neutral",
+    "image": "bag.png"
+  },
+  {
+    "id": 83,
+    "title": "Messenger Pro",
+    "description": "Water-resistant fabric with magnetic flap and tablet sleeve.",
+    "price": 74.99,
+    "rating": 4.5,
+    "color": "red",
+    "image": "bag.png"
+  },
+  {
+    "id": 84,
+    "title": "Kids Mini Backpack",
+    "description": "Fun 3-D animal face with safety whistle buckle and chest strap.",
+    "price": 29.99,
+    "originalPrice": 39.99,
+    "rating": 4.6,
+    "color": "white",
+    "image": "bag.png"
+  },
+  {
+    "id": 85,
+    "title": "Luxury Carry-On",
+    "description": "Hard-shell front pocket for laptop and 360° silent wheels.",
+    "price": 219.99,
+    "rating": 4.9,
+    "color": "indigo",
+    "image": "bag.png"
+  },
+  {
+    "id": 86,
+    "title": "Beach Straw Tote",
+    "description": "Hand-woven straw with cotton lining and inner zip pocket.",
+    "price": 44.99,
+    "rating": 4.3,
+    "color": "orange",
+    "image": "bag.png"
+  },
+  {
+    "id": 87,
+    "title": "Tech Organizer Pouch",
+    "description": "Elastic loops and mesh pockets for cables, mouse and power bank.",
+    "price": 19.99,
+    "originalPrice": 24.99,
+    "rating": 4.4,
+    "color": "black",
+    "image": "bag.png"
+  },
+  {
+    "id": 88,
+    "title": "Convertible Duffle-Backpack",
+    "description": "Hidden straps let you switch from duffle to backpack in seconds.",
+    "price": 89.99,
+    "rating": 4.7,
+    "color": "indigo",
+    "image": "bag.png"
+  },
+  {
+    "id": 89,
+    "title": "Pet Travel Tote",
+    "description": "Ventilated sides, removable mat and collapsible water bowl.",
+    "price": 54.99,
+    "originalPrice": 69.99,
+    "rating": 4.5,
+    "color": "orange",
+    "image": "bag.png"
+  },
+  {
+    "id": 90,
+    "title": "Insulated Lunch Bag",
+    "description": "Leak-proof lining and front pocket for utensils.",
+    "price": 22.99,
+    "rating": 4.2,
+    "color": "light-blue",
+    "image": "bag.png"
+  },
+  {
+    "id": 91,
+    "title": "Vintage Carpet Bag",
+    "description": "Tapestry fabric and wooden handles evoke old-world travel charm.",
+    "price": 79.99,
+    "rating": 4.6,
+    "color": "silver",
+    "image": "bag.png"
+  },
+  {
+    "id": 92,
+    "title": "Compression Packing Cubes",
+    "description": "Set of 3 zippered cubes that compress clothes to save space.",
+    "price": 34.99,
+    "originalPrice": 44.99,
+    "rating": 4.7,
+    "color": "light-blue",
+    "image": "bag.png"
+  },
+  {
+    "id": 93,
+    "title": "Boarding Pass Wallet",
+    "description": "Slim RFID wallet with quick-draw passport slot and pen loop.",
+    "price": 27.99,
+    "rating": 4.4,
+    "color": "gray",
+    "image": "bag.png"
+  },
+  {
+    "id": 94,
+    "title": "Roll-Up Makeup Case",
+    "description": "Waterproof lining and adjustable compartments for brushes.",
+    "price": 39.99,
+    "rating": 4.5,
+    "color": "rose-gold",
+    "image": "bag.png"
+  },
+  {
+    "id": 95,
+    "title": "Convertible Tote-Backpack",
+    "description": "Hidden backpack straps and laptop sleeve for work-to-gym switch.",
+    "price": 94.99,
+    "originalPrice": 114.99,
+    "rating": 4.8,
+    "color": "green",
+    "image": "bag.png"
+  },
+  {
+    "id": 96,
+    "title": "Fishing Tackle Bag",
+    "description": "Removable trays, pliers holder and waterproof base.",
+    "price": 69.99,
+    "rating": 4.3,
+    "color": "rose-gold",
+    "image": "bag.png"
+  },
+  {
+    "id": 97,
+    "title": "Diaper Backpack",
+    "description": "Insulated bottle pockets, wipe dispenser and changing pad.",
+    "price": 59.99,
+    "originalPrice": 74.99,
+    "rating": 4.6,
+    "color": "black",
+    "image": "bag.png"
+  },
+  {
+    "id": 98,
+    "title": "Ski Boot Bag",
+    "description": "Ventilated goggle pocket and drainage grommets for wet gear.",
+    "price": 79.99,
+    "rating": 4.7,
+    "color": "red",
+    "image": "bag.png"
+  },
+  {
+    "id": 99,
+    "title": "Minimalist Sling",
+    "description": "Single-strap sling that sits flat against your back.",
+    "price": 44.99,
+    "rating": 4.4,
+    "color": "gray",
+    "image": "bag.png"
+  },
+  {
+    "id": 100,
+    "title": "Lux Jewelry Roll",
+    "description": "Velvet-lined compartments and snap closure for safe travel.",
+    "price": 49.99,
+    "originalPrice": 59.99,
+    "rating": 4.9,
+    "color": "green",
+    "image": "bag.png"
+  },
+  {
+    "id": 101,
+    "title": "Golf Shoe Bag",
+    "description": "Ventilated compartments for shoes and glove, plus tee slots.",
+    "price": 54.99,
+    "rating": 4.5,
+    "color": "charcoal",
+    "image": "bag.png"
+  },
+  {
+    "id": 102,
+    "title": "Foldable Shopping Crate",
+    "description": "Rigid sides collapse flat and hold 30 lbs of groceries.",
+    "price": 32.99,
+    "rating": 4.3,
+    "color": "orange",
+    "image": "bag.png"
+  },
+  {
+    "id": 103,
+    "title": "Convertible Clutch",
+    "description": "Detachable strap turns wristlet into cross-body for evenings.",
+    "price": 39.99,
+    "originalPrice": 49.99,
+    "rating": 4.6,
+    "color": "lilac",
+    "image": "bag.png"
+  },
+  {
+    "id": 104,
+    "title": "Heavy-Duty Tool Bag",
+    "description": "Molded base, 20 pockets and waterproof fabric for job sites.",
+    "price": 69.99,
+    "rating": 4.8,
+    "color": "orange",
+    "image": "bag.png"
   }
 ]
