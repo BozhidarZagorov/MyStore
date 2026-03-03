@@ -183,6 +183,80 @@ export default function Home({ category = "watches" }) {
 
   const info = CATEGORY_INFO[category] ?? CATEGORY_INFO.watches;
 
+
+  const filterContent = (
+  <>
+    <div className="plp-filter-group">
+      <span className="plp-filter-label">Color</span>
+      <div className="plp-color-swatches">
+        {colors.map((color) => {
+          const isSelected = selectedColors.includes(color);
+          return (
+            <button
+              key={color}
+              type="button"
+              className={`plp-color-swatch ${
+                isSelected ? "plp-color-swatch--selected" : ""
+              }`}
+              onClick={() => toggleColor(color)}
+              style={{ "--swatch-color": COLOR_MAP[color] ?? "#6b7280" }}
+            />
+          );
+        })}
+      </div>
+    </div>
+
+  <div className="plp-filter-group">
+    <span className="plp-filter-label">Price</span>
+    <div className="plp-price-slider">
+      <input
+        type="range"
+        min={minPrice}
+        max={maxPrice}
+        value={priceRange[0]}
+        onChange={(e) => {
+          const newMin = Number(e.target.value);
+          setPriceRange([
+            Math.min(newMin, priceRange[1]), // never allow min > max
+            priceRange[1],
+          ]);
+        }}
+      />
+
+      <input
+        type="range"
+        min={minPrice}
+        max={maxPrice}
+        value={priceRange[1]}
+        onChange={(e) => {
+          const newMax = Number(e.target.value);
+          setPriceRange([
+            priceRange[0],
+            Math.max(newMax, priceRange[0]), // never allow max < min
+          ]);
+        }}
+      />
+        <div className="plp-price-values">
+          <span>€{priceRange[0]}</span> - <span>€{priceRange[1]}</span>
+        </div>
+    </div>
+  </div>
+  <div className="plp-filter-group">
+  <div className="plp-discount-filter">
+    <label className="plp-checkbox">
+      <input
+        type="checkbox"
+        checked={selectedPriceFilters.includes("discounted")}
+        onChange={() => togglePriceFilter("discounted")}
+      />
+      <span className="plp-checkbox-custom" />
+      <span>Discounted items</span>
+    </label>
+  </div>
+</div>
+  </>
+);
+
   return (
     <>
       <section className="plp-page">
@@ -225,42 +299,7 @@ export default function Home({ category = "watches" }) {
           <div className="plp-content">
             <aside className="plp-filters">
               <h3 className="plp-filters-title">Filter</h3>
-
-              <div className="plp-filter-group">
-                <span className="plp-filter-label">Color</span>
-                <div className="plp-color-swatches">
-                  {colors.map((color) => {
-                    const isSelected = selectedColors.includes(color);
-                    return (
-                      <button
-                        key={color}
-                        type="button"
-                        className={`plp-color-swatch ${isSelected ? "plp-color-swatch--selected" : ""}`}
-                        onClick={() => toggleColor(color)}
-                        style={{ "--swatch-color": COLOR_MAP[color] ?? "#6b7280" }}
-                        title={color.charAt(0).toUpperCase() + color.slice(1)}
-                        aria-pressed={isSelected}
-                      />
-                    );
-                  })}
-                </div>
-              </div>
-
-              <div className="plp-filter-group">
-                <span className="plp-filter-label">Price</span>
-                <div className="plp-checkbox-list">
-                  {PRICE_FILTERS.map(({ id, label }) => (
-                    <label key={id} className="plp-checkbox-item">
-                      <input
-                        type="checkbox"
-                        checked={selectedPriceFilters.includes(id)}
-                        onChange={() => togglePriceFilter(id)}
-                      />
-                      {label}
-                    </label>
-                  ))}
-                </div>
-              </div>
+              {filterContent}
             </aside>
 
             <div>
