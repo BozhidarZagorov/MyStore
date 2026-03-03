@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect} from "react";
 import ProductCard from "../components/ProductCard";
 import products from "../data/products.json";
 
@@ -95,11 +95,29 @@ export default function Home({ category = "watches" }) {
   const [selectedColors, setSelectedColors] = useState([]);
   const [selectedPriceFilters, setSelectedPriceFilters] = useState([]);
   const [sortBy, setSortBy] = useState("featured");
+  const [isFilterOpen, setIsFilterOpen] = useState(false);
 
   const categoryProducts = useMemo(
     () => products.filter((p) => getProductCategory(p) === category),
     [category]
   );
+
+  const minPrice = useMemo(
+    () => Math.min(...categoryProducts.map(p => p.price ?? 0)),
+    [categoryProducts]
+  );
+
+  const maxPrice = useMemo(
+    () => Math.max(...categoryProducts.map(p => p.price ?? 0)),
+    [categoryProducts]
+  );
+
+  const [priceRange, setPriceRange] = useState([minPrice, maxPrice]);
+
+  // Change when another category is selected
+  useEffect(() => {
+    setPriceRange([minPrice, maxPrice]);
+  }, [minPrice, maxPrice]);
 
   const colors = useMemo(
     () => [...new Set(categoryProducts.map((p) => p.color))].sort(),
