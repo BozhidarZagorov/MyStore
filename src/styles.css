@@ -373,6 +373,90 @@ main {
   background-color: #42464e;
 }
 
+.plp-sort-mobile-filters-wrapper {
+  display: none;
+  flex-direction: column; /* stack button + drawer */
+  align-items: center;    /* center horizontally */
+  width: 100%;            /* make full width so centering works */
+  margin-top: 0.5rem;
+}
+
+.plp-price-slider {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.25rem; /* optional: add some top spacing */
+}
+
+.plp-price-slider input[type="range"] {
+  width: 100%;
+  -webkit-appearance: none;
+  height: 6px;
+  border-radius: 3px;
+  background: #d1d5db;
+  outline: none;
+  cursor: pointer;
+}
+
+.plp-price-slider input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f59e0b, #f97316);
+  cursor: pointer;
+}
+
+.plp-price-values {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #4b5563;
+}
+
+.plp-discount-filter {
+  margin-top: 1rem;
+  justify-self: center;
+}
+
+.plp-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+}
+
+/* Hide native checkbox */
+.plp-checkbox input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Custom round checkbox */
+.plp-checkbox-custom {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: white;
+  transition: all 0.2s ease;
+}
+
+/* Checked state */
+.plp-checkbox input:checked + .plp-checkbox-custom {
+  background-color: #00ff08;
+  border: 1px solid black;
+}
+
+/* Optional subtle hover */
+.plp-checkbox:hover .plp-checkbox-custom {
+  transform: scale(1.05);
+}
+
+
 .plp-product-count {
   justify-self: center;
   font-size: 0.9rem;
