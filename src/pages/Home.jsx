@@ -309,7 +309,20 @@ export default function Home({ category = "watches" }) {
             </div>
             <span className="plp-product-count">
               {visibleProducts.length} out of {sortedProducts.length} products displayed
-            </span>
+            <div className="plp-sort-mobile-filters-wrapper">
+              <button
+                type="button"
+                className="plp-filter-burger-btn"
+                onClick={() => setIsFilterOpen((prev) => !prev)}
+              >
+                {isFilterOpen ? "Close Filters" : "Show Filters"}
+              </button>
+              {isFilterOpen && (
+                <div className="plp-filter-mobile-drawer">
+                  {filterContent}
+                </div>
+              )}
+            </div>
             <div className="plp-sort">
               <span>Sort by</span>
               <select value={sortBy} onChange={handleSortChange}>
@@ -320,6 +333,7 @@ export default function Home({ category = "watches" }) {
                 ))}
               </select>
             </div>
+            </span>        
           </div>
 
           <div className="plp-content">
