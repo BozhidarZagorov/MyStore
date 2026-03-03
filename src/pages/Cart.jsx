@@ -1,7 +1,7 @@
 import { useCart } from "../context/CartContext";
 
 export default function Cart() {
-  const { items, totalItems, subtotal, removeFromCart, clearCart } = useCart();
+  const { items, totalItems, subtotal, removeFromCart, clearCart, removeOneFromCart, AddOneToCart } = useCart();
   const isEmpty = items.length === 0;
 
   return (
@@ -40,13 +40,30 @@ export default function Cart() {
                           €{(item.price * item.quantity).toFixed(2)}
                         </span>
                       </div>
+                        <div className="cart-item-quantity-controls">
+                          <button
+                            type="button"
+                            className="cart-item-remove-one"
+                            onClick={() => removeOneFromCart(item.id)}
+                          >
+                            -
+                          </button>
+                          <button
+                            type="button"
+                            className="cart-item-add-one"
+                            onClick={() => AddOneToCart(item.id)}
+                          >
+                            +
+                          </button>
+                        </div>
                       <button
                         type="button"
                         className="cart-item-remove"
                         onClick={() => removeFromCart(item.id)}
                       >
-                        Remove
+                        Remove all
                       </button>
+                      
                     </div>
                   </div>
                 ))}
