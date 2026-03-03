@@ -125,16 +125,24 @@ export default function Home({ category = "watches" }) {
   );
 
   const filteredProducts = useMemo(() => {
-    return categoryProducts.filter((product) => {
-      const colorMatch =
-        selectedColors.length === 0 ||
-        selectedColors.includes(product.color);
-      const priceMatch =
-        selectedPriceFilters.length === 0 ||
-        selectedPriceFilters.some((id) => matchesPriceFilter(product, id));
-      return colorMatch && priceMatch;
-    });
-  }, [categoryProducts, selectedColors, selectedPriceFilters]);
+  return categoryProducts.filter(product => {
+    const colorMatch =
+      selectedColors.length === 0 ||
+      selectedColors.includes(product.color);
+
+    const rangeMatch =
+      (product.price ?? 0) >= priceRange[0] &&
+      (product.price ?? 0) <= priceRange[1];
+
+    const priceFilterMatch =
+      selectedPriceFilters.length === 0 ||
+      selectedPriceFilters.some(filterId =>
+        matchesPriceFilter(product, filterId)
+      );
+
+    return colorMatch && rangeMatch && priceFilterMatch;
+  });
+}, [categoryProducts, selectedColors, priceRange, selectedPriceFilters]);
 
   const sortedProducts = useMemo(
     () => sortProducts(filteredProducts, sortBy),
