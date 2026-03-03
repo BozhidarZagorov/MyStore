@@ -42,6 +42,11 @@ const COLOR_MAP = {
   brown: "#92400e",
   neutral: "#a8a29e",
   green: "#16a34a",
+  lilac: "#c8a2c8",
+  orange: "#e88f1c",
+  gold: "#FFD700",
+  "rose-gold": "#B76E79",
+  "light-blue": "#ADD8E6",
 };
 
 const PRICE_FILTERS = [
