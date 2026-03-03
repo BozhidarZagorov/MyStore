@@ -310,6 +310,27 @@ main {
   min-width: 0;
 }
 
+.plp-filter-burger-btn {
+  display: none;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, #f59e0b, #f97316);
+  color: white;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  width: 100%; /* stretch to parent width */
+}
+
+.plp-filter-mobile-drawer {
+  margin-top: 0.5rem;
+  width: 100%;           /* same width as wrapper */
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  background: #f9fafb;
+  box-sizing: border-box; /* important for padding + width */
+}
+
 .plp-filter-tag {
   display: inline-flex;
   align-items: center;
