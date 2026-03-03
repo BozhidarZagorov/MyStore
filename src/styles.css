@@ -159,6 +159,7 @@ main {
 }
 
 .navbar-cart {
+  margin-left: auto;
   justify-self: end;
   font-size: 0.95rem;
   color: #e5e7eb;
