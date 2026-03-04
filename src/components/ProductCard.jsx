@@ -1,11 +1,13 @@
 import { useCart } from "../context/CartContext";
+import { useToast } from "../context/ToastContext";
 
 export default function ProductCard({ product }) {
   const { addToCart } = useCart();
+  const { showToast } = useToast();
 
   const handleAddToCart = () => {
     addToCart(product);
-    alert("Product added to cart");
+    showToast("Product added to cart");
   };
 
   const hasDiscount = product.originalPrice && product.originalPrice > product.price;
