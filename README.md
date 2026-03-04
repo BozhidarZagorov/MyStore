@@ -33,16 +33,17 @@ Users can:
 - Responsive design
 
 # Summary
-1️⃣ What Has Been Implemented
+## What Has Been Implemented
 
-The project is a responsive e-commerce web application built using React.
+The project is a responsive e-commerce web application built using React. 
 It includes the following features:
-Product listing page with category filtering (Watches, Bags, Shoes)
-filter tags for better UX
+- Product listing page with category filtering (Watches, Bags, Shoes)
+- filter tags for better UX
+
 Dynamic product filtering by:
-Color (interactive swatches)
-Price range (dual range slider)
-Discounted items checkbox
+- Color (interactive swatches)
+- Price range (dual range slider)
+- Discounted items checkbox
 
 Sorting functionality (Alphabetical, Price low–high, high–low, featured)
 
