@@ -1,7 +1,7 @@
 # C4-Task
-A task from C4 Nexus
+## A task from C4 Nexus
 
-## This project is not deployed. Follow installation instructions to run this project.
+###  This project is not deployed. Follow installation instructions to run this project.
 
 ## ⚙️ Installation
 
