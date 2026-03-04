@@ -45,34 +45,41 @@ Dynamic product filtering by:
 - Price range (dual range slider)
 - Discounted items checkbox
 
-Sorting functionality (Alphabetical, Price low–high, high–low, featured)
+Sorting functionality: 
+- Alphabetical
+- Price low–high
+- high–low 
+- featured (default view by id)
 
 Responsive design for desktop and mobile
+
 Mobile slide-in navigation drawer with swipe-to-close gesture
 
 Shopping cart functionality:
-Add to cart
-Remove item completely
-Increase/decrease quantity individually
-Dynamic cart item count
-Custom toast notification system (replacing browser alert)
-Load more pagination behavior
-Clean UI/UX with modern styling and interactive components
+- Add to cart
+- Remove item completely
+- Increase/decrease quantity individually
+- Dynamic cart item count
 
-as well as everything that was in (Required Sections and Functionalities) such as:
+- Custom toast notification system (replacing browser alert)
 
-The application supports both desktop and mobile layouts with specific UI adaptations for smaller screens.
+- Load more pagination behavior
 
-2️⃣ Technologies Used
-Core Technologies
+- Clean UI/UX with modern styling and interactive components
 
-React
-React Router
-Vite
+as well as everything that was in (Required Sections and Functionalities)
 
-React Hooks
-Context
-CSS
+### The application supports both desktop and mobile layouts with specific UI adaptations for smaller screens.
+
+## Technologies Used
+
+- React
+- React Router
+- Vite
+
+- React Hooks
+- Context
+- CSS
 
 3️⃣ How the Solution Was Achieved
 Architecture
