@@ -84,7 +84,7 @@ export default function Cart() {
                   className="cart-summary-clear"
                   onClick={clearCart}
                 >
-                  Clear cart
+                  Checkout {/* Clear cart */}
                 </button>
               </aside>
             </div>

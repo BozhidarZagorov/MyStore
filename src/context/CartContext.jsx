@@ -1,9 +1,11 @@
 import { createContext, useContext, useMemo, useState } from "react";
+import { useToast } from "../context/ToastContext";
 
 const CartContext = createContext(undefined);
 
 export function CartProvider({ children }) {
   const [items, setItems] = useState([]);
+  const { showToast } = useToast();
 
   const addToCart = (product) => {
     if (!product) return;
@@ -33,7 +35,10 @@ export function CartProvider({ children }) {
     setItems((prev) => prev.map((item) => item.id === productId ? { ...item, quantity: item.quantity + 1 } : item));
   };
 
-  const clearCart = () => setItems([]);
+  const clearCart = () => {
+    setItems([]);
+    showToast("Products bought");
+  }
 
   const value = useMemo(() => {
     const totalItems = items.reduce(
