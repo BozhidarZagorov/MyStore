@@ -157,7 +157,7 @@ Solution:
 Some desktop styling (fixed widths) caused misalignment on mobile. Components such as product cards and swatches required specific mobile overrides using media queries.
 
 Solution:
-Override widths and alignment using CSS Grid and centered layouts under certain breakpoints.
+- Override widths and alignment using CSS Grid and centered layouts under certain breakpoints.
 
 3. Swipe Gesture Implementation
 
@@ -165,29 +165,30 @@ Implementing a drawer that follows the finger required handling raw touch events
 
 Challenges included:
 
-Preventing unwanted direction swipes
-Smooth snapping behavior
-Managing transition timing
+- Preventing unwanted direction swipes
+- Smooth snapping behavior
+- Managing transition timing
 
 Solution:
-Using useRef to track touch positions and dynamically updating CSS transform values.
+- Using useRef to track touch positions and dynamically updating CSS transform values.
 
 4. State Management Cleanliness
 
 Cart operations needed to be immutable and safe, especially when decreasing quantities.
 
 Solution:
-Used controlled updates via map() and filter() inside functional state updates.
+- Used controlled updates via map() and filter() inside functional state updates.
 
-Conclusion
+## Conclusion
 
 The project demonstrates:
 
-Strong understanding of React fundamentals
-Effective state management with Context API
-Performance optimization using useMemo
-Responsive UI design
-Mobile-first interaction improvements
-Clean and scalable component architecture
+- understanding of React fundamentals
+- understanding of CSS styling
+- Effective state management with Contexts
+- Performance optimization using useMemo
+- Responsive UI design
+- Mobile-first interaction improvements
+- Clean and scalable component architecture
 
 The final result is a fully functional, responsive e-commerce interface with modern UX patterns.
