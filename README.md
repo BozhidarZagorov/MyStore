@@ -53,7 +53,7 @@ Shopping cart functionality:
 Add to cart
 Remove item completely
 Increase/decrease quantity individually
-Dynamic cart item count in header
+Dynamic cart item count
 Custom toast notification system (replacing browser alert)
 Load more pagination behavior
 Clean UI/UX with modern styling and interactive components
@@ -79,7 +79,7 @@ Architecture
 The application follows a modular structure:
 
 Pages (e.g., Home / Product Listing)
-Reusable Components (ProductCard, Header, etc.)
+Reusable Components (ProductCard, Header, Footer, etc.)
 Context (CartContext for global cart state)
 Utility logic (sorting, filtering functions)
 
