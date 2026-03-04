@@ -88,7 +88,7 @@ export default function Header({ mobileFilters }) {
         <NavLink
           to="/cart"
           className={({ isActive }) =>
-            `navbar-cart ${isActive ? "navbar-link--active" : ""}`
+            `navbar-cart navbar-link ${isActive ? "navbar-link--active" : ""}`
           }
         >
           Cart{totalItems > 0 ? ` (${totalItems})` : ""}
