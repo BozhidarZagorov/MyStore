@@ -81,73 +81,76 @@ as well as everything that was in (Required Sections and Functionalities)
 - Context
 - CSS
 
-3️⃣ How the Solution Was Achieved
-Architecture
+## How the Solution Was Achieved
+### Architecture
 
 The application follows a modular structure:
 
-Pages (e.g., Home / Product Listing)
-Reusable Components (ProductCard, Header, Footer, etc.)
-Context (CartContext for global cart state)
-Utility logic (sorting, filtering functions)
+- Pages (e.g., Home / Product Listing)
+- Reusable Components (ProductCard, Header, Footer, etc.)
+- CartContext for global cart state
+- ToastContext for custom toast notifications
+- Utility logic (sorting, filtering functions)
 
-Product Filtering
+### Product Filtering
 
 Filtering was implemented using useMemo to optimize performance.
 Products are filtered based on:
-Selected colors
-Selected price range (min–max slider)
-Discounted checkbox logic
+- Selected color swatches
+- Selected price range (min–max sliders)
+- Discounted checkbox logic
 
 The price slider ensures:
 
-The minimum price cannot exceed the maximum
-The maximum cannot go below the minimum
+- The minimum price cannot exceed the maximum
+- The maximum cannot go below the minimum
 
 This was achieved by clamping values inside the onChange handlers.
 
-Sorting
+### Sorting
 
 Sorting is handled via a dedicated utility function that clones and sorts the array based on the selected sort option.
-Cart Logic
+
+### Cart Logic
 Cart functionality was implemented using React Context API to maintain global state.
 
 Features include:
 
-Adding items
-Removing items completely
-Removing items one by one (decreasing quantity)
-Automatically removing item when quantity reaches zero
-State updates use immutable operations (map, filter) to ensure React state integrity.
-Mobile Navigation & UX
+- Adding items
+- Removing items completely
+- Removing/adding items one by one (decreasing/increasing quantity)
+- Automatically removing item when quantity reaches zero
+- State updates use immutable operations (map, filter) to ensure React state integrity.
+
+### Mobile Navigation & UX
 
 A mobile drawer menu was implemented with:
 
-CSS transform animations
-Touch event listeners (onTouchStart, onTouchMove, onTouchEnd)
-Swipe-to-close behavior that follows the user's finger
-Smooth transition snapping
+- CSS transform animations
+- Touch event listeners (onTouchStart, onTouchMove, onTouchEnd)
+- Swipe-to-close behavior that follows the user's finger
+- Smooth transition snapping
 
 This enhances the mobile user experience and mimics native app behavior.
 
-Custom Toast Notification
+### Custom Toast Notification
 
 Instead of using alert(), a custom Toast Context was created:
 
-Global toast provider
-Auto-dismiss behavior
-Animated appearance
-Reusable across the app
+- Global toast provider
+- Auto-dismiss behavior
+- Animated appearance
+- Reusable across the app
 
 This improves UI quality and user experience.
 
-4️⃣ Challenges Encountered
+## Challenges Encountered
 1. Dual Price Slider Logic
 
 Ensuring the maximum slider could not move below the minimum required careful value clamping logic. Without constraints, sliders could overlap and break filtering logic.
 
 Solution:
-Mathematical checks using Math.min and Math.max inside event handlers.
+- Mathematical checks using Math.min and Math.max inside event handlers.
 
 2. Responsive Layout Issues
 
