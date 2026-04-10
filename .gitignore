@@ -25,3 +25,4 @@ dist-ssr
 
 task.txt
 reference
+.env
