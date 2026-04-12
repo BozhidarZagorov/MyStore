@@ -1,14 +1,8 @@
 # MyStore
 ## A simple e-commerce web app
 
-###  This project is not deployed. Follow installation instructions to run this project.
-
-## ⚙️ Installation
-
-1. Clone the repository
-2. Install dependencies - npm install
-3. Start development server - npm run dev
-
+###  This project is deployed.
+### https://myrestore.web.app/bags
 
 ## 🛍️ E-Commerce Store
 
