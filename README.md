@@ -12,7 +12,7 @@
 
 ## 🛍️ E-Commerce Store
 
-A modern product listing and shopping experience built with React and Firebase.
+A modern product listing and shopping experience built with React.
 
 Users can:
 - Browse products by category
