@@ -2,7 +2,7 @@
 ## A simple e-commerce web app
 
 ###  This project is deployed.
-### https://myrestore.web.app/bags
+### https://myrestore.web.app
 
 ## 🛍️ E-Commerce Store
 
